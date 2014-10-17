@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "assemble": "git://github.com/assemble/assemble#v0.6.0",
+    "gulp-gh-pages": "^0.4.0",
     "mocha": "*",
     "verb": ">= 0.2.6",
     "verb-tag-jscomments": ">= 0.2.0"

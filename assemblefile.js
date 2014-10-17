@@ -1,5 +1,8 @@
 
 var assemble = require('assemble');
+var ghpages = require('gulp-gh-pages');
+
+var deployOptions = {}
 
 assemble.task('build', function () {
   return assemble.src('./api/examples/*.html')
@@ -7,7 +10,8 @@ assemble.task('build', function () {
 });
 
 assemble.task('deploy', function () {
-
+  return assemble.src('./_gh_pages/**/*')
+    .pipe(ghpages(deployOptions));
 });
 
 
