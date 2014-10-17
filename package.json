@@ -20,7 +20,7 @@
       "url": "https://github.com/doowb/codemash-speakers/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "index.js",
+  "main": "assemblefile.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -28,9 +28,10 @@
     "test": "mocha -R spec"
   },
   "devDependencies": {
-    "verb-tag-jscomments": ">= 0.2.0",
+    "assemble": "git://github.com/assemble/assemble#v0.6.0",
+    "mocha": "*",
     "verb": ">= 0.2.6",
-    "mocha": "*"
+    "verb-tag-jscomments": ">= 0.2.0"
   },
   "keywords": [
     "docs",
